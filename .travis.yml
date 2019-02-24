@@ -5,8 +5,7 @@ services:
 
 
 before_install:
-  - docker build -t Yosshii001/docker-react -f Dockerfile.dev .
+  - docker build -t yosshii001/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run test Yosshii001/docker-react npm run test -- --coverage
-  
+  - docker run test yosshii001/docker-react npm run test -- --coverage
